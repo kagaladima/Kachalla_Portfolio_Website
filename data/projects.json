@@ -1,0 +1,51 @@
+{
+  "pageHeader": {
+    "eyebrow": "What I've built",
+    "title": "Projects",
+    "subtitle": "Control, embedded, and IoT systems designed to solve real problems"
+  },
+  "featuredTitle": "Featured Work",
+  "projects": [
+    {
+      "imageSrc": "images/project_1.png",
+      "imageAlt": "IoT-Based Smart Water Tank Monitoring and Control System",
+      "tag": "IoT · Embedded Systems",
+      "title": "IoT-Based Smart Water Tank Monitoring & Control System",
+      "description": "An automated system that monitors water tank levels using a waterproof ultrasonic sensor and controls a relay-driven 12V DC pump through an ESP32 microcontroller. Safety-critical pump control runs locally on the ESP32, while a cloud backend and mobile/web dashboard provide real-time monitoring, alerts, and remote configuration, even when offline.",
+      "tech": [
+        "ESP32",
+        "Ultrasonic Sensor",
+        "Relay Control",
+        "Supabase",
+        "React PWA",
+        "Android (Capacitor)"
+      ]
+    },
+    {
+      "imageSrc": "images/project_3.png",
+      "imageAlt": "Smart Poultry House Environmental Monitoring System",
+      "tag": "Embedded AI",
+      "title": "Smart Poultry House Environmental Monitoring and Automated Temperature Control System",
+      "description": "An IoT-based poultry house system that continuously monitors temperature and humidity to maintain a healthy environment for poultry. The system automatically controls ventilation and cooling equipment when temperature levels rise beyond the desired range, while providing real-time environmental data and alerts to help farmers maintain optimal conditions and improve poultry productivity.",
+      "tech": [
+        "ESP32",
+        "DHT22 Sensor",
+        "Relay Control",
+        "Ventilation System",
+        "IoT Cloud"
+      ]
+    },
+    {
+      "imageSrc": "images/project_2.png",
+      "imageAlt": "Factory I/O PLC Automation Exercises",
+      "tag": "Automation · Simulation",
+      "title": "Factory I/O PLC Automation Exercises",
+      "description": "A series of ladder-logic control programs designed and tested in Factory I/O, covering conveyor sequencing, sorting stations, and safety interlocks, aimed at strengthening practical PLC programming and industrial automation skills.",
+      "tech": [
+        "PLC Ladder Logic",
+        "Factory I/O",
+        "Sensors & Actuators"
+      ]
+    }
+  ]
+}

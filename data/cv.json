@@ -1,0 +1,105 @@
+{
+  "pageHeader": {
+    "eyebrow": "Résumé",
+    "title": "Curriculum Vitae",
+    "subtitle": "A summary of my education, skills, and project experience"
+  },
+  "download": {
+    "label": "Download CV (PDF)",
+    "href": "files/Kachalla_Ahmad_Galadima_CV_01.pdf"
+  },
+  "sections": [
+    {
+      "title": "Profile",
+      "text": "Computer Engineering student at Ahmadu Bello University, Zaria, with a focus on control and automation systems, embedded systems, IoT, and applied artificial intelligence. Experienced in building end-to-end hardware and software systems, from sensor-level firmware to cloud dashboards and mobile applications."
+    },
+    {
+      "title": "Education",
+      "entries": [
+        {
+          "role": "B.Eng. Computer Engineering",
+          "meta": "Ahmadu Bello University, Zaria — October 2019 to Present"
+        },
+        {
+          "role": "Secondary Education (WASSCE)",
+          "meta": "An-Nur Islamic College — 2019"
+        },
+        {
+          "role": "Primary Education",
+          "meta": "PHCN Staff Primary School"
+        }
+      ]
+    },
+    {
+      "title": "Technical Skills",
+      "entries": [
+        {
+          "role": "Industrial Automation and Control",
+          "meta": "PLC Programming (Ladder Logic), Factory I/O Simulation"
+        },
+        {
+          "role": "Embedded Systems and IoT",
+          "meta": "Arduino / ESP32"
+        },
+        {
+          "role": "Software Development",
+          "meta": "Python / Django, HTML / CSS, Flutter"
+        },
+        {
+          "role": "Engineering Analysis and Simulation",
+          "meta": "MATLAB / Simulink, Proteus Simulation"
+        },
+        {
+          "role": "Cloud, Database and Version Control",
+          "meta": "Firebase, Git and GitHub"
+        },
+        {
+          "role": "Computer Systems and IT Support",
+          "meta": "Computer Maintenance and Troubleshooting, Operating Systems (Windows), Software and Hardware Installation"
+        }
+      ]
+    },
+    {
+      "title": "Experience",
+      "entries": [
+        {
+          "role": "Industrial Trainee (SIWES)",
+          "meta": "Mainstream Energy Solutions Limited — 6 months"
+        },
+        {
+          "role": "Computer Training",
+          "meta": "Ameerco Global Limited — 4 months",
+          "description": "Completed practical computer training and obtained a Certificate in Computer Appreciation."
+        }
+      ]
+    },
+    {
+      "title": "Projects",
+      "entries": [
+        {
+          "role": "IoT-Based Smart Water Tank Monitoring and Control System",
+          "meta": "ESP32 · Ultrasonic Sensor · Relay · Supabase · React PWA · Android",
+          "description": "Automated water-level monitoring and pump control system with offline-safe local control on the ESP32 and a real-time remote dashboard for monitoring, alerts, and configuration."
+        },
+        {
+          "role": "Smart Poultry House Environmental Monitoring and Automated Temperature Control System",
+          "meta": "ESP32 · DHT22 · Relay Control · Temperature Sensors",
+          "description": "An IoT-based poultry house system that continuously monitors temperature and humidity to maintain a healthy environment for poultry."
+        },
+        {
+          "role": "Factory I/O PLC Automation Exercises",
+          "meta": "PLC Ladder Logic · Factory I/O · Sensors and Actuators",
+          "description": "Series of ladder logic control programs covering conveyor sequencing, sorting stations, and an automated water tank system, developed and tested in Factory I/O."
+        }
+      ]
+    },
+    {
+      "title": "Communication",
+      "text": "Presented technical project work, including the IoT-Based Smart Water Tank Monitoring and Control System, to academic supervisors and peers. Comfortable documenting and explaining engineering and software projects clearly to both technical and non-technical audiences."
+    },
+    {
+      "title": "Career Goal",
+      "text": "To become a highly skilled control and automation engineer, creating technology that solves problems in Africa."
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "pageHeader": {
+    "eyebrow": "Core strengths",
+    "title": "Technical Skills",
+    "subtitle": "Automation, software, embedded systems, and AI for practical engineering solutions"
+  },
+  "intro": {
+    "title": "My Engineering Toolkit",
+    "text": "I work across control and automation, embedded systems, software engineering, and data-driven problem solving. These capabilities allow me to move from concept to a functional solution in both academic and practical settings."
+  },
+  "categories": [
+    {
+      "title": "Control & Automation",
+      "count": "3 core strengths",
+      "skills": [
+        {
+          "icon": "⚙️",
+          "name": "PLC Programming",
+          "description": "Designing process control logic for industrial systems and automation tasks.",
+          "details": [
+            "Ladder Logic",
+            "Sequential logic design",
+            "Factory I/O simulation"
+          ],
+          "level": 88
+        },
+        {
+          "icon": "🔧",
+          "name": "Control Systems",
+          "description": "Modeling and improving dynamic systems for stability, response, and efficiency.",
+          "details": [
+            "System modeling",
+            "Feedback control",
+            "Process optimization"
+          ],
+          "level": 82
+        },
+        {
+          "icon": "📡",
+          "name": "Industrial Automation",
+          "description": "Applying automation ideas to real-world, equipment-driven workflows and operational systems.",
+          "details": [
+            "Sensors and actuators",
+            "System integration",
+            "Safety interlocks"
+          ],
+          "level": 84
+        }
+      ]
+    },
+    {
+      "title": "Embedded Systems & IoT",
+      "count": "3 core strengths",
+      "skills": [
+        {
+          "icon": "🧩",
+          "name": "ESP32 / Arduino",
+          "description": "Developing embedded hardware systems for real-time monitoring, control, and IoT integration.",
+          "details": [
+            "Firmware design",
+            "Sensor interfacing",
+            "Peripheral control"
+          ],
+          "level": 90
+        },
+        {
+          "icon": "🌊",
+          "name": "IoT System Design",
+          "description": "Building connected solutions that collect data, automate decisions, and improve operational insight.",
+          "details": [
+            "Wireless communication",
+            "Cloud dashboards",
+            "Remote device management"
+          ],
+          "level": 87
+        },
+        {
+          "icon": "📟",
+          "name": "Sensor Integration",
+          "description": "Connecting physical measurement devices to software and control logic for actionable outputs.",
+          "details": [
+            "Ultrasonic sensing",
+            "Temperature and humidity",
+            "Relay control"
+          ],
+          "level": 86
+        }
+      ]
+    },
+    {
+      "title": "Software & Analysis",
+      "count": "3 core strengths",
+      "skills": [
+        {
+          "icon": "🐍",
+          "name": "Python & Django",
+          "description": "Building reliable backend logic, automation scripts, and application features with Python.",
+          "details": [
+            "Backend development",
+            "Automation scripts",
+            "Web app logic"
+          ],
+          "level": 80
+        },
+        {
+          "icon": "💻",
+          "name": "HTML / CSS",
+          "description": "Creating responsive, clean interfaces for personal and technical portfolio work.",
+          "details": [
+            "Responsive layouts",
+            "Modern UI polish",
+            "Web front-end design"
+          ],
+          "level": 83
+        },
+        {
+          "icon": "📊",
+          "name": "MATLAB / Simulink",
+          "description": "Using engineering analysis tools to test control and system behavior before physical deployment.",
+          "details": [
+            "Simulation",
+            "System analysis",
+            "Model validation"
+          ],
+          "level": 76
+        }
+      ]
+    }
+  ],
+  "techStack": {
+    "title": "Technology Stack",
+    "tags": [
+      "ESP32",
+      "Arduino",
+      "Python",
+      "Django",
+      "HTML",
+      "CSS",
+      "Flutter",
+      "MATLAB",
+      "Simulink",
+      "Proteus",
+      "Firebase",
+      "GitHub",
+      "PLC",
+      "Factory I/O",
+      "Supabase"
+    ]
+  },
+  "learning": {
+    "title": "What I’m Learning",
+    "items": [
+      {
+        "title": "Advanced Control and Automation",
+        "text": "Deepening my understanding of dynamic systems, closed-loop control, and safer industrial processes."
+      },
+      {
+        "title": "Embedded Intelligence",
+        "text": "Exploring how AI and machine learning can be integrated into small, resource-aware embedded systems."
+      },
+      {
+        "title": "Real-World System Design",
+        "text": "Building systems that are practical, efficient, scalable, and adaptable to African infrastructure needs."
+      }
+    ]
+  }
+}

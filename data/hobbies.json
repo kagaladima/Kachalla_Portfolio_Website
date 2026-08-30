@@ -1,0 +1,34 @@
+{
+  "pageHeader": {
+    "eyebrow": "Personal Interests",
+    "title": "What I Enjoy",
+    "subtitle": "These are some of the activities that keep me curious, creative, active, and motivated outside my academic and engineering work."
+  },
+  "hobbies": [
+    {
+      "icon": "📚",
+      "title": "Reading",
+      "description": "I enjoy reading to discover new ideas, broaden my knowledge, and gain different perspectives."
+    },
+    {
+      "icon": "💻",
+      "title": "Coding",
+      "description": "I enjoy writing code, experimenting with projects, and turning ideas into practical solutions."
+    },
+    {
+      "icon": "🎮",
+      "title": "Gaming",
+      "description": "Gaming is a fun way for me to relax while developing creativity, strategy, and problem-solving skills."
+    },
+    {
+      "icon": "⚽",
+      "title": "Football",
+      "description": "I enjoy football for the excitement, teamwork, discipline, and competitive spirit it brings."
+    },
+    {
+      "icon": "🚀",
+      "title": "Learning New Technologies",
+      "description": "I like exploring emerging technologies and continuously building skills that support my engineering journey."
+    }
+  ]
+}

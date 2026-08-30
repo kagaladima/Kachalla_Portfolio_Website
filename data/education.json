@@ -1,0 +1,23 @@
+{
+  "pageHeader": {
+    "eyebrow": "My Journey",
+    "title": "Educational Background",
+    "subtitle": "From primary school to a B.Eng. in Computer Engineering"
+  },
+  "timelineHeading": "Academic Timeline",
+  "timeline": [
+    {
+      "role": "Ahmadu Bello University, Zaria",
+      "meta": "B.Eng. Computer Engineering — In view",
+      "description": "Undergraduate studies focused on control systems, embedded systems, software development, and artificial intelligence, culminating in IoT- and AI-driven final year projects."
+    },
+    {
+      "role": "An-Nur Islamic College",
+      "meta": "Secondary Education"
+    },
+    {
+      "role": "PHCN Staff Primary School",
+      "meta": "Primary Education"
+    }
+  ]
+}

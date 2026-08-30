@@ -1,223 +1,251 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Technical Skills | Kachalla Ahmad Galadima</title>
 <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="topbar">
+<div class="wrap">
+    <a class="brand" href="index.html">KACHALLA <span>AHMAD GALADIMA</span></a>
+    <button class="nav-toggle" onclick="document.getElementById('navlist').classList.toggle('open')">☰</button>
+    <nav>
+        <ul id="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="skills.html" class="active">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+</div>
 
-<style>
-/* =========================
-   SKILLS PAGE
-========================= */
+<header class="page-header">
+<p class="eyebrow">Core strengths</p>
+<h1>Technical Skills</h1>
+<p class="sub">Automation, software, embedded systems, and AI for practical engineering solutions</p>
+</header>
 
-.skills-hero {
-    text-align: center;
-    padding: 80px 20px 55px;
-}
+<section class="skills-intro">
+<h2>My Engineering Toolkit</h2>
+<p>I work across control and automation, embedded systems, software engineering, and data-driven problem solving. These capabilities allow me to move from concept to a functional solution in both academic and practical settings.</p>
+</section>
 
-.skills-hero .eyebrow {
-    color: #777;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 13px;
-    font-weight: 700;
-}
+<div class="skills-container">
+<div class="skills-category">
+    <div class="skills-category-title">
+        <h2>Control & Automation</h2>
+        <span>3 core strengths</span>
+    </div>
+    <div class="skill-grid-new">
+        <div class="skill-card">
+            <div class="skill-icon">⚙️</div>
+            <h3>PLC Programming</h3>
+            <p class="skill-description">Designing process control logic for industrial systems and automation tasks.</p>
+            <ul>
+                <li>Ladder Logic</li>
+                <li>Sequential logic design</li>
+                <li>Factory I/O simulation</li>
+            </ul>
+            <div class="skill-level">
+                <div class="skill-level-header"><span>Proficiency</span><span>88%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div>
+            </div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon">🔧</div>
+            <h3>Control Systems</h3>
+            <p class="skill-description">Modeling and improving dynamic systems for stability, response, and efficiency.</p>
+            <ul>
+                <li>System modeling</li>
+                <li>Feedback control</li>
+                <li>Process optimization</li>
+            </ul>
+            <div class="skill-level">
+                <div class="skill-level-header"><span>Proficiency</span><span>82%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width:82%"></div></div>
+            </div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon">📡</div>
+            <h3>Industrial Automation</h3>
+            <p class="skill-description">Applying automation ideas to real-world, equipment-driven workflows and operational systems.</p>
+            <ul>
+                <li>Sensors and actuators</li>
+                <li>System integration</li>
+                <li>Safety interlocks</li>
+            </ul>
+            <div class="skill-level">
+                <div class="skill-level-header"><span>Proficiency</span><span>84%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width:84%"></div></div>
+            </div>
+        </div>
+    </div>
+</div>
 
-.skills-hero h1 {
-    font-size: clamp(42px, 7vw, 72px);
-    margin: 12px 0;
-}
+<div class="skills-category">
+    <div class="skills-category-title">
+        <h2>Embedded Systems & IoT</h2>
+        <span>3 core strengths</span>
+    </div>
+    <div class="skill-grid-new">
+        <div class="skill-card">
+            <div class="skill-icon">🧩</div>
+            <h3>ESP32 / Arduino</h3>
+            <p class="skill-description">Developing embedded hardware systems for real-time monitoring, control, and IoT integration.</p>
+            <ul>
+                <li>Firmware design</li>
+                <li>Sensor interfacing</li>
+                <li>Peripheral control</li>
+            </ul>
+            <div class="skill-level">
+                <div class="skill-level-header"><span>Proficiency</span><span>90%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+            </div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon">🌊</div>
+            <h3>IoT System Design</h3>
+            <p class="skill-description">Building connected solutions that collect data, automate decisions, and improve operational insight.</p>
+            <ul>
+                <li>Wireless communication</li>
+                <li>Cloud dashboards</li>
+                <li>Remote device management</li>
+            </ul>
+            <div class="skill-level">
+                <div class="skill-level-header"><span>Proficiency</span><span>87%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width:87%"></div></div>
+            </div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon">📟</div>
+            <h3>Sensor Integration</h3>
+            <p class="skill-description">Connecting physical measurement devices to software and control logic for actionable outputs.</p>
+            <ul>
+                <li>Ultrasonic sensing</li>
+                <li>Temperature and humidity</li>
+                <li>Relay control</li>
+            </ul>
+            <div class="skill-level">
+                <div class="skill-level-header"><span>Proficiency</span><span>86%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width:86%"></div></div>
+            </div>
+        </div>
+    </div>
+</div>
 
-.skills-hero .sub {
-    max-width: 700px;
-    margin: auto;
-    color: #666;
-    font-size: 18px;
-    line-height: 1.7;
-}
+<div class="skills-category">
+    <div class="skills-category-title">
+        <h2>Software & Analysis</h2>
+        <span>3 core strengths</span>
+    </div>
+    <div class="skill-grid-new">
+        <div class="skill-card">
+            <div class="skill-icon">🐍</div>
+            <h3>Python & Django</h3>
+            <p class="skill-description">Building reliable backend logic, automation scripts, and application features with Python.</p>
+            <ul>
+                <li>Backend development</li>
+                <li>Automation scripts</li>
+                <li>Web app logic</li>
+            </ul>
+            <div class="skill-level">
+                <div class="skill-level-header"><span>Proficiency</span><span>80%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+            </div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon">💻</div>
+            <h3>HTML / CSS</h3>
+            <p class="skill-description">Creating responsive, clean interfaces for personal and technical portfolio work.</p>
+            <ul>
+                <li>Responsive layouts</li>
+                <li>Modern UI polish</li>
+                <li>Web front-end design</li>
+            </ul>
+            <div class="skill-level">
+                <div class="skill-level-header"><span>Proficiency</span><span>83%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width:83%"></div></div>
+            </div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon">📊</div>
+            <h3>MATLAB / Simulink</h3>
+            <p class="skill-description">Using engineering analysis tools to test control and system behavior before physical deployment.</p>
+            <ul>
+                <li>Simulation</li>
+                <li>System analysis</li>
+                <li>Model validation</li>
+            </ul>
+            <div class="skill-level">
+                <div class="skill-level-header"><span>Proficiency</span><span>76%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width:76%"></div></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 
+<section class="tech-stack">
+<h2>Technology Stack</h2>
+<div class="tech-tags">
+    <span class="tech-tag">ESP32</span>
+    <span class="tech-tag">Arduino</span>
+    <span class="tech-tag">Python</span>
+    <span class="tech-tag">Django</span>
+    <span class="tech-tag">HTML</span>
+    <span class="tech-tag">CSS</span>
+    <span class="tech-tag">Flutter</span>
+    <span class="tech-tag">MATLAB</span>
+    <span class="tech-tag">Simulink</span>
+    <span class="tech-tag">Proteus</span>
+    <span class="tech-tag">Firebase</span>
+    <span class="tech-tag">GitHub</span>
+    <span class="tech-tag">PLC</span>
+    <span class="tech-tag">Factory I/O</span>
+    <span class="tech-tag">Supabase</span>
+</div>
+</section>
 
-/* INTRO */
+<section class="learning-section">
+<h2>What I’m Learning</h2>
+<div class="learning-grid">
+    <div class="learning-item">
+        <h3>Advanced Control and Automation</h3>
+        <p>Deepening my understanding of dynamic systems, closed-loop control, and safer industrial processes.</p>
+    </div>
+    <div class="learning-item">
+        <h3>Embedded Intelligence</h3>
+        <p>Exploring how AI and machine learning can be integrated into small, resource-aware embedded systems.</p>
+    </div>
+    <div class="learning-item">
+        <h3>Real-World System Design</h3>
+        <p>Building systems that are practical, efficient, scalable, and adaptable to African infrastructure needs.</p>
+    </div>
+</div>
+</section>
 
-.skills-intro {
-    max-width: 900px;
-    margin: 0 auto 60px;
-    text-align: center;
-}
+<footer>
+<div class="footer-links">
+    <a href="index.html">Home</a>|
+    <a href="about.html">About</a>|
+    <a href="projects.html">Projects</a>|
+    <a href="cv.html">CV</a>|
+    <a href="contact.html">Contact</a>
+</div>
+<p>Email: ahmadkachalla3@gmail.com &nbsp;|&nbsp; Phone: +234 810 445 1902 &nbsp;|&nbsp; Kaduna, Nigeria</p>
+<p>© 2026 Kachalla Ahmad Galadima. All rights reserved.</p>
+</footer>
 
-.skills-intro h2 {
-    font-size: 32px;
-    margin-bottom: 15px;
-}
-
-.skills-intro p {
-    color: #666;
-    line-height: 1.8;
-}
-
-
-/* SKILL CARDS */
-
-.skills-container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 20px 70px;
-}
-
-.skills-category {
-    margin-bottom: 65px;
-}
-
-.skills-category-title {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 25px;
-}
-
-.skills-category-title h2 {
-    margin: 0;
-    font-size: 28px;
-}
-
-.skills-category-title span {
-    color: #888;
-    font-size: 14px;
-}
-
-
-.skill-grid-new {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 22px;
-}
-
-.skill-card {
-    border: 1px solid #e5e5e5;
-    border-radius: 16px;
-    padding: 26px;
-    background: #fff;
-    transition: transform .25s ease, box-shadow .25s ease;
-}
-
-.skill-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 15px 35px rgba(0,0,0,.08);
-}
-
-.skill-icon {
-    width: 48px;
-    height: 48px;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #f2f2f2;
-    font-size: 22px;
-    margin-bottom: 18px;
-}
-
-.skill-card h3 {
-    margin: 0 0 8px;
-    font-size: 21px;
-}
-
-.skill-card .skill-description {
-    color: #666;
-    line-height: 1.6;
-    font-size: 14px;
-}
-
-.skill-card ul {
-    padding-left: 18px;
-    color: #555;
-    line-height: 1.7;
-    font-size: 14px;
-}
-
-.skill-level {
-    margin-top: 20px;
-}
-
-.skill-level-header {
-    display: flex;
-    justify-content: space-between;
-    font-size: 12px;
-    color: #777;
-    margin-bottom: 7px;
-}
-
-.skill-bar {
-    height: 7px;
-    background: #ededed;
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-.skill-fill {
-    height: 100%;
-    border-radius: 20px;
-    background: #111;
-}
-
-
-/* TECHNOLOGY TAGS */
-
-.tech-stack {
-    max-width: 1100px;
-    margin: 0 auto 70px;
-    padding: 0 20px;
-    text-align: center;
-}
-
-.tech-stack h2 {
-    font-size: 30px;
-}
-
-.tech-tags {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 25px;
-}
-
-.tech-tag {
-    border: 1px solid #ddd;
-    padding: 10px 17px;
-    border-radius: 30px;
-    background: #fafafa;
-    font-size: 14px;
-}
-
-
-/* WHAT I'VE LEARNED */
-
-.learning-section {
-    max-width: 1100px;
-    margin: 0 auto 80px;
-    padding: 0 20px;
-}
-
-.learning-section h2 {
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 35px;
-}
-
-.learning-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.learning-item {
-    padding: 24px;
-    border-left: 4px solid #111;
-    background: #f8f8f8;
-}
+</body>
+</html>
 
 .learning-item h3 {
     margin-top: 0;

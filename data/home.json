@@ -1,0 +1,26 @@
+{
+  "hero": {
+    "eyebrow": "Computer Engineering Student",
+    "headline": "Building the systems",
+    "highlight": "that control tomorrow.",
+    "lead": "I'm Kachalla Ahmad Galadima, a Computer Engineering student at Ahmadu Bello University, Zaria, focused on control and automation, embedded systems, and artificial intelligence. I design IoT-based and PLC-driven solutions that make everyday systems safer, smarter, and more efficient.",
+    "primaryButton": {
+      "label": "View My Projects",
+      "href": "projects.html"
+    },
+    "secondaryButton": {
+      "label": "See My CV",
+      "href": "cv.html"
+    },
+    "imageSrc": "images/profile.jpg",
+    "imageAlt": "Kachalla Ahmad Galadima"
+  },
+  "about": {
+    "eyebrow": "A little about me",
+    "title": "What I am working towards",
+    "paragraphs": [
+      "Hello! My name is <strong>Kachalla Ahmad Galadima.</strong> I am a Computer Engineering student with a passion for automation and control systems, software development, embedded systems, and artificial intelligence. I enjoy learning new technologies and solving real-world control and automation problems. My goal is to become a professional control engineer capable of building innovative solutions that improve lives.",
+      "This site is a simple record of what I am learning, building, and working towards. Have a look around to see my education, skills, projects, hobbies, and ways to contact me."
+    ]
+  }
+}

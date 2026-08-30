@@ -1,0 +1,52 @@
+{
+  "pageHeader": {
+    "eyebrow": "Let's connect",
+    "title": "Contact Me",
+    "subtitle": "I'm open to internships, collaborations, and opportunities in control & automation"
+  },
+  "contactInfo": {
+    "title": "Reach Me Directly",
+    "items": [
+      {
+        "icon": "✉",
+        "label": "Email",
+        "value": "ahmadkachalla3@gmail.com"
+      },
+      {
+        "icon": "☎",
+        "label": "Phone",
+        "value": "+234 810 445 1902"
+      },
+      {
+        "icon": "📍",
+        "label": "Location",
+        "value": "Kaduna, Nigeria"
+      }
+    ]
+  },
+  "form": {
+    "title": "Send a Message",
+    "buttonText": "Send Message",
+    "fields": [
+      {
+        "type": "text",
+        "id": "name",
+        "label": "Full Name",
+        "placeholder": "Your name"
+      },
+      {
+        "type": "email",
+        "id": "email",
+        "label": "Email Address",
+        "placeholder": "you@example.com"
+      },
+      {
+        "type": "textarea",
+        "id": "message",
+        "label": "Message",
+        "rows": 5,
+        "placeholder": "Write your message here..."
+      }
+    ]
+  }
+}

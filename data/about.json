@@ -1,0 +1,27 @@
+{
+  "pageHeader": {
+    "eyebrow": "Get to know me",
+    "title": "About Me",
+    "subtitle": "Computer Engineering Student | Control Engineer | Technology Enthusiast"
+  },
+  "profile": {
+    "imageSrc": "images/profile.jpg",
+    "imageAlt": "My Picture",
+    "heading": "Who I Am",
+    "paragraphs": [
+      "Hello! My name is <strong>Kachalla Ahmad Galadima.</strong> I am a Computer Engineering student with a passion for automation and control systems, software development, embedded systems, and artificial intelligence.",
+      "I enjoy learning new technologies and solving real-world control and automation problems, as well as software development. My goal is to become a professional control engineer capable of building innovative solutions that improve lives."
+    ]
+  },
+  "sections": [
+    {
+      "title": "Career Goals",
+      "content": "Become a highly skilled control and automation engineer while creating technology that solves problems in Africa. I aim to combine embedded systems, IoT, and artificial intelligence to design practical, affordable solutions for water management, industrial automation, and beyond."
+    }
+  ],
+  "quote": {
+    "title": "My Personal Quote",
+    "text": "\"Control is not just about machines obeying commands; it is about engineering systems that make the world safer, smarter, and more efficient. Every challenge I solve today prepares me to lead the automation of tomorrow.\"",
+    "author": "Kachalla Ahmad Galadima"
+  }
+}
