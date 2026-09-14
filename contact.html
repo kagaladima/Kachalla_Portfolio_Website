@@ -9,86 +9,121 @@
 <body>
 
 <div class="topbar">
-<div class="wrap">
-    <a class="brand" href="index.html">KACHALLA <span>AHMAD GALADIMA</span></a>
-    <button class="nav-toggle" onclick="document.getElementById('navlist').classList.toggle('open')">☰</button>
-    <nav>
-        <ul id="navlist">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="hobbies.html">Hobbies</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-    </nav>
-</div>
+    <div class="wrap">
+        <a class="brand" href="index.html">KACHALLA <span>AHMAD GALADIMA</span></a>
+        <button class="nav-toggle" onclick="document.getElementById('navlist').classList.toggle('open')">☰</button>
+        <nav>
+            <ul id="navlist">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 </div>
 
 <header class="page-header">
-<p class="eyebrow">Let's connect</p>
-<h1>Contact Me</h1>
-<p class="sub">I'm open to internships, collaborations, and opportunities in control & automation</p>
+    <p class="eyebrow">Let's connect</p>
+    <h1>Contact Me</h1>
+    <p class="sub">I'm open to internships, collaborations, and opportunities in control & automation</p>
 </header>
 
 <section>
-<div class="contact-grid">
-    <div class="contact-info">
-        <h2>Reach Me Directly</h2>
-        <div class="item">
-            <div class="icon">✉</div>
-            <div>
-                <strong>Email</strong><br>
-                ahmadkachalla3@gmail.com
+    <div class="contact-grid">
+        <div class="contact-info">
+            <h2>Reach Me Directly</h2>
+            <div class="item">
+                <div class="icon">✉</div>
+                <div>
+                    <strong>Email</strong><br>
+                    ahmadkachalla3@gmail.com
+                </div>
+            </div>
+            <div class="item">
+                <div class="icon">☎</div>
+                <div>
+                    <strong>Phone</strong><br>
+                    +234 810 445 1902
+                </div>
+            </div>
+            <div class="item">
+                <div class="icon">📍</div>
+                <div>
+                    <strong>Location</strong><br>
+                    Kaduna, Nigeria
+                </div>
             </div>
         </div>
-        <div class="item">
-            <div class="icon">☎</div>
-            <div>
-                <strong>Phone</strong><br>
-                +234 810 445 1902
-            </div>
-        </div>
-        <div class="item">
-            <div class="icon">📍</div>
-            <div>
-                <strong>Location</strong><br>
-                Kaduna, Nigeria
-            </div>
+
+        <div class="contact-form">
+            <h2>Send a Message</h2>
+            <form id="contactForm">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Your name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="you@example.com" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+                <button type="submit" class="btn btn-primary" style="border:none;cursor:pointer;">Send Message</button>
+                <p id="formStatus" class="form-status" aria-live="polite"></p>
+            </form>
         </div>
     </div>
-
-    <div class="contact-form">
-        <h2>Send a Message</h2>
-        <form onsubmit="return false;">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" placeholder="Your name">
-
-            <label for="email">Email Address</label>
-            <input type="email" id="email" placeholder="you@example.com">
-
-            <label for="message">Message</label>
-            <textarea id="message" rows="5" placeholder="Write your message here..."></textarea>
-
-            <button type="submit" class="btn btn-primary" style="border:none;cursor:pointer;">Send Message</button>
-        </form>
-    </div>
-</div>
 </section>
 
 <footer>
-<div class="footer-links">
-    <a href="index.html">Home</a>|
-    <a href="about.html">About</a>|
-    <a href="projects.html">Projects</a>|
-    <a href="cv.html">CV</a>|
-    <a href="contact.html">Contact</a>
-</div>
-<p>Email: ahmadkachalla3@gmail.com &nbsp;|&nbsp; Phone: +234 810 445 1902 &nbsp;|&nbsp; Kaduna, Nigeria</p>
-<p>© 2026 Kachalla Ahmad Galadima. All rights reserved.</p>
+    <div class="footer-links">
+        <a href="index.html">Home</a>|
+        <a href="about.html">About</a>|
+        <a href="projects.html">Projects</a>|
+        <a href="cv.html">CV</a>|
+        <a href="contact.html">Contact</a>
+    </div>
+    <p>Email: ahmadkachalla3@gmail.com &nbsp;|&nbsp; Phone: +234 810 445 1902 &nbsp;|&nbsp; Kaduna, Nigeria</p>
+    <p>© 2026 Kachalla Ahmad Galadima. All rights reserved.</p>
 </footer>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    var nameField = document.getElementById('name');
+    var emailField = document.getElementById('email');
+    var messageField = document.getElementById('message');
+    var statusEl = document.getElementById('formStatus');
+
+    var name = nameField.value.trim();
+    var email = emailField.value.trim();
+    var message = messageField.value.trim();
+
+    if (!name || !email || !message) {
+        statusEl.textContent = 'Please fill in your name, email, and message before sending.';
+        statusEl.className = 'form-status error';
+        return;
+    }
+
+    var subject = encodeURIComponent('Portfolio message from ' + name);
+    var body = encodeURIComponent(
+        'Name: ' + name + '\n' +
+        'Email: ' + email + '\n\n' +
+        message
+    );
+    var mailtoLink = 'mailto:ahmadkachalla3@gmail.com?subject=' + subject + '&body=' + body;
+
+    statusEl.textContent = 'Opening your email app to send this message to ahmadkachalla3@gmail.com \u2026';
+    statusEl.className = 'form-status success';
+
+    window.location.href = mailtoLink;
+});
+</script>
 
 </body>
 </html>
