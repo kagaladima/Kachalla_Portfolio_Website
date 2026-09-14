@@ -41,14 +41,14 @@
                 <div class="icon">✉</div>
                 <div>
                     <strong>Email</strong><br>
-                    ahmadkachalla3@gmail.com
+                    <a href="mailto:ahmadkachalla3@gmail.com">ahmadkachalla3@gmail.com</a>
                 </div>
             </div>
             <div class="item">
                 <div class="icon">☎</div>
                 <div>
                     <strong>Phone</strong><br>
-                    +234 810 445 1902
+                    <a href="tel:+2348104451902">+234 810 445 1902</a>
                 </div>
             </div>
             <div class="item">
@@ -58,19 +58,42 @@
                     Kaduna, Nigeria
                 </div>
             </div>
+            <div class="item">
+                <div class="icon">in</div>
+                <div>
+                    <strong>LinkedIn</strong><br>
+                    <a href="https://www.linkedin.com/in/kachalla-ahmad-galadima-59a717372" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icon">GH</div>
+                <div>
+                    <strong>GitHub</strong><br>
+                    <a href="https://github.com/kagaladima" target="_blank" rel="noopener noreferrer">github.com/kagaladima</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icon">WA</div>
+                <div>
+                    <strong>WhatsApp</strong><br>
+                    <a href="https://wa.me/qr/SBUZNALLGOUPA1" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+                </div>
+            </div>
         </div>
 
         <div class="contact-form">
             <h2>Send a Message</h2>
-            <form id="contactForm">
+            <form id="contactForm" action="https://formsubmit.co/ajax/ahmadkachalla3@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="New message from your portfolio website">
+                <input type="hidden" name="_captcha" value="true">
                 <label for="name">Full Name</label>
-                <input type="text" id="name" placeholder="Your name" required>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
 
                 <label for="email">Email Address</label>
-                <input type="email" id="email" placeholder="you@example.com" required>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
 
                 <label for="message">Message</label>
-                <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
 
                 <button type="submit" class="btn btn-primary" style="border:none;cursor:pointer;">Send Message</button>
                 <p id="formStatus" class="form-status" aria-live="polite"></p>
@@ -92,17 +115,15 @@
 </footer>
 
 <script>
-document.getElementById('contactForm').addEventListener('submit', function (e) {
+document.getElementById('contactForm').addEventListener('submit', async function (e) {
     e.preventDefault();
 
-    var nameField = document.getElementById('name');
-    var emailField = document.getElementById('email');
-    var messageField = document.getElementById('message');
+    var form = this;
     var statusEl = document.getElementById('formStatus');
-
-    var name = nameField.value.trim();
-    var email = emailField.value.trim();
-    var message = messageField.value.trim();
+    var name = document.getElementById('name').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var message = document.getElementById('message').value.trim();
+    var button = form.querySelector('button[type="submit"]');
 
     if (!name || !email || !message) {
         statusEl.textContent = 'Please fill in your name, email, and message before sending.';
@@ -110,18 +131,44 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
         return;
     }
 
-    var subject = encodeURIComponent('Portfolio message from ' + name);
-    var body = encodeURIComponent(
-        'Name: ' + name + '\n' +
-        'Email: ' + email + '\n\n' +
-        message
-    );
-    var mailtoLink = 'mailto:ahmadkachalla3@gmail.com?subject=' + subject + '&body=' + body;
+    button.disabled = true;
+    button.textContent = 'Sending...';
+    statusEl.textContent = 'Sending your message...';
+    statusEl.className = 'form-status';
 
-    statusEl.textContent = 'Opening your email app to send this message to ahmadkachalla3@gmail.com \u2026';
-    statusEl.className = 'form-status success';
+    try {
+        var response = await fetch(form.action, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+                name: name,
+                email: email,
+                message: message,
+                _subject: 'New message from your portfolio website',
+                _captcha: 'true'
+            })
+        });
 
-    window.location.href = mailtoLink;
+        var data = await response.json();
+
+        if (response.ok && data.success !== false) {
+            statusEl.textContent = 'Message sent successfully. Thank you for contacting me!';
+            statusEl.className = 'form-status success';
+            form.reset();
+        } else {
+            throw new Error(data.message || 'Unable to send the message.');
+        }
+    } catch (error) {
+        statusEl.textContent = 'Sorry, your message could not be sent. Please try again.';
+        statusEl.className = 'form-status error';
+        console.error('Contact form error:', error);
+    } finally {
+        button.disabled = false;
+        button.textContent = 'Send Message';
+    }
 });
 </script>
 
